@@ -1,5 +1,7 @@
-if(process.env.NODE_ENV === 'production'){
-  module.exports = {mongoURI: 'mongodb://ocalhost/vidjot-prod'}
+if (process.env.NODE_ENV === 'production') {
+  module.exports = {
+    mongoURI: 'mongodb://pete:Pacifier60@ds163402.mlab.com:63402/vidpoint-prod'
+  };
 } else {
-  module.exports = {mongoURI: 'mongodb://localhost/vidjot-dev'}
+  module.exports = { mongoURI: 'mongodb://localhost/vidpoint-dev' };
 }
